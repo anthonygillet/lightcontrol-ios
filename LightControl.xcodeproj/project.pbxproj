@@ -1,0 +1,403 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		923AAB921635C3D80008346B /* LightDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 923AAB911635C3C50008346B /* LightDatabase.m */; };
+		923AABA21635C3F70008346B /* cam_tab.png in Resources */ = {isa = PBXBuildFile; fileRef = 923AAB941635C3F70008346B /* cam_tab.png */; };
+		923AABA31635C3F70008346B /* cam_tab@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 923AAB951635C3F70008346B /* cam_tab@2x.png */; };
+		923AABA41635C3F70008346B /* cool_down.png in Resources */ = {isa = PBXBuildFile; fileRef = 923AAB961635C3F70008346B /* cool_down.png */; };
+		923AABA51635C3F70008346B /* cool_up.png in Resources */ = {isa = PBXBuildFile; fileRef = 923AAB971635C3F70008346B /* cool_up.png */; };
+		923AABA61635C3F70008346B /* heat_down.png in Resources */ = {isa = PBXBuildFile; fileRef = 923AAB981635C3F70008346B /* heat_down.png */; };
+		923AABA71635C3F70008346B /* heat_up.png in Resources */ = {isa = PBXBuildFile; fileRef = 923AAB991635C3F70008346B /* heat_up.png */; };
+		923AABA81635C3F70008346B /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 923AAB9A1635C3F70008346B /* Icon.png */; };
+		923AABA91635C3F70008346B /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 923AAB9B1635C3F70008346B /* Icon@2x.png */; };
+		923AABAA1635C3F70008346B /* light_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 923AAB9C1635C3F70008346B /* light_off.png */; };
+		923AABAB1635C3F70008346B /* light_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 923AAB9D1635C3F70008346B /* light_on.png */; };
+		923AABAC1635C3F70008346B /* light_tab.png in Resources */ = {isa = PBXBuildFile; fileRef = 923AAB9E1635C3F70008346B /* light_tab.png */; };
+		923AABAF1635C3F70008346B /* temp_tab.png in Resources */ = {isa = PBXBuildFile; fileRef = 923AABA11635C3F70008346B /* temp_tab.png */; };
+		923AABB21635C8AF0008346B /* Thermostat.m in Sources */ = {isa = PBXBuildFile; fileRef = 923AABB11635C8AF0008346B /* Thermostat.m */; };
+		923AABBB1635CF830008346B /* ThermostatTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 923AABB91635CF830008346B /* ThermostatTableViewController.m */; };
+		923AABBC1635CF830008346B /* ThermostatTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 923AABBA1635CF830008346B /* ThermostatTableViewController.xib */; };
+		923AABBF1635CFB20008346B /* ThermostatTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 923AABBE1635CFB20008346B /* ThermostatTableViewCell.m */; };
+		923AABC11635CFE60008346B /* ThermostatTableViewCell_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 923AABC01635CFE60008346B /* ThermostatTableViewCell_iPhone.xib */; };
+		92A2255C15ED0815000ED465 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92A2255B15ED0815000ED465 /* UIKit.framework */; };
+		92A2255E15ED0815000ED465 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92A2255D15ED0815000ED465 /* Foundation.framework */; };
+		92A2256015ED0815000ED465 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92A2255F15ED0815000ED465 /* CoreGraphics.framework */; };
+		92A2256615ED0815000ED465 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 92A2256415ED0815000ED465 /* InfoPlist.strings */; };
+		92A2256815ED0815000ED465 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A2256715ED0815000ED465 /* main.m */; };
+		92A2256C15ED0815000ED465 /* LightControlAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A2256B15ED0815000ED465 /* LightControlAppDelegate.m */; };
+		92A2258F15ED0842000ED465 /* LightTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A2258D15ED0842000ED465 /* LightTableViewController.m */; };
+		92A2259015ED0842000ED465 /* LightTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92A2258E15ED0842000ED465 /* LightTableViewController.xib */; };
+		92A225AD15ED0BEE000ED465 /* LightTableViewCell_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92A225AC15ED0BEE000ED465 /* LightTableViewCell_iPhone.xib */; };
+		92A225B215ED3BD8000ED465 /* LightTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A225B115ED3BD7000ED465 /* LightTableViewCell.m */; };
+		92A225B615ED6769000ED465 /* Light.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A225AF15ED3879000ED465 /* Light.m */; };
+		92A225B715ED6775000ED465 /* LightRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A225AB15ED08EE000ED465 /* LightRequest.m */; };
+		92A7ECB11648327200D61846 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 92A7ECAE1648327200D61846 /* Default-568h@2x.png */; };
+		92A7ECB21648327200D61846 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 92A7ECAF1648327200D61846 /* Default.png */; };
+		92A7ECB31648327200D61846 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 92A7ECB01648327200D61846 /* Default@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		923AAB901635C3C50008346B /* LightDatabase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LightDatabase.h; sourceTree = "<group>"; };
+		923AAB911635C3C50008346B /* LightDatabase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LightDatabase.m; sourceTree = "<group>"; };
+		923AAB941635C3F70008346B /* cam_tab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cam_tab.png; sourceTree = "<group>"; };
+		923AAB951635C3F70008346B /* cam_tab@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cam_tab@2x.png"; sourceTree = "<group>"; };
+		923AAB961635C3F70008346B /* cool_down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cool_down.png; sourceTree = "<group>"; };
+		923AAB971635C3F70008346B /* cool_up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cool_up.png; sourceTree = "<group>"; };
+		923AAB981635C3F70008346B /* heat_down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heat_down.png; sourceTree = "<group>"; };
+		923AAB991635C3F70008346B /* heat_up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heat_up.png; sourceTree = "<group>"; };
+		923AAB9A1635C3F70008346B /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		923AAB9B1635C3F70008346B /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		923AAB9C1635C3F70008346B /* light_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = light_off.png; sourceTree = "<group>"; };
+		923AAB9D1635C3F70008346B /* light_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = light_on.png; sourceTree = "<group>"; };
+		923AAB9E1635C3F70008346B /* light_tab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = light_tab.png; sourceTree = "<group>"; };
+		923AABA11635C3F70008346B /* temp_tab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = temp_tab.png; sourceTree = "<group>"; };
+		923AABB01635C8AE0008346B /* Thermostat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Thermostat.h; sourceTree = "<group>"; };
+		923AABB11635C8AF0008346B /* Thermostat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Thermostat.m; sourceTree = "<group>"; };
+		923AABB81635CF830008346B /* ThermostatTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThermostatTableViewController.h; sourceTree = "<group>"; };
+		923AABB91635CF830008346B /* ThermostatTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThermostatTableViewController.m; sourceTree = "<group>"; };
+		923AABBA1635CF830008346B /* ThermostatTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThermostatTableViewController.xib; sourceTree = "<group>"; };
+		923AABBD1635CFB20008346B /* ThermostatTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThermostatTableViewCell.h; sourceTree = "<group>"; };
+		923AABBE1635CFB20008346B /* ThermostatTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThermostatTableViewCell.m; sourceTree = "<group>"; };
+		923AABC01635CFE60008346B /* ThermostatTableViewCell_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThermostatTableViewCell_iPhone.xib; sourceTree = "<group>"; };
+		92A2255715ED0815000ED465 /* LightControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LightControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		92A2255B15ED0815000ED465 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		92A2255D15ED0815000ED465 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		92A2255F15ED0815000ED465 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		92A2256315ED0815000ED465 /* LightControl-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LightControl-Info.plist"; sourceTree = "<group>"; };
+		92A2256515ED0815000ED465 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		92A2256715ED0815000ED465 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		92A2256915ED0815000ED465 /* LightControl-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LightControl-Prefix.pch"; sourceTree = "<group>"; };
+		92A2256A15ED0815000ED465 /* LightControlAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LightControlAppDelegate.h; sourceTree = "<group>"; };
+		92A2256B15ED0815000ED465 /* LightControlAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LightControlAppDelegate.m; sourceTree = "<group>"; };
+		92A2258C15ED0842000ED465 /* LightTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LightTableViewController.h; sourceTree = "<group>"; };
+		92A2258D15ED0842000ED465 /* LightTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LightTableViewController.m; sourceTree = "<group>"; };
+		92A2258E15ED0842000ED465 /* LightTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LightTableViewController.xib; sourceTree = "<group>"; };
+		92A225AA15ED08EE000ED465 /* LightRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LightRequest.h; sourceTree = "<group>"; };
+		92A225AB15ED08EE000ED465 /* LightRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LightRequest.m; sourceTree = "<group>"; };
+		92A225AC15ED0BEE000ED465 /* LightTableViewCell_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LightTableViewCell_iPhone.xib; sourceTree = "<group>"; };
+		92A225AE15ED3879000ED465 /* Light.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Light.h; sourceTree = "<group>"; };
+		92A225AF15ED3879000ED465 /* Light.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Light.m; sourceTree = "<group>"; };
+		92A225B015ED3BD7000ED465 /* LightTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LightTableViewCell.h; sourceTree = "<group>"; };
+		92A225B115ED3BD7000ED465 /* LightTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LightTableViewCell.m; sourceTree = "<group>"; };
+		92A7ECA7164826CB00D61846 /* LightServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LightServer.h; sourceTree = "<group>"; };
+		92A7ECAE1648327200D61846 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		92A7ECAF1648327200D61846 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		92A7ECB01648327200D61846 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		92A2255415ED0815000ED465 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92A2255C15ED0815000ED465 /* UIKit.framework in Frameworks */,
+				92A2255E15ED0815000ED465 /* Foundation.framework in Frameworks */,
+				92A2256015ED0815000ED465 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		923AAB931635C3F70008346B /* images */ = {
+			isa = PBXGroup;
+			children = (
+				92A7ECAE1648327200D61846 /* Default-568h@2x.png */,
+				92A7ECAF1648327200D61846 /* Default.png */,
+				92A7ECB01648327200D61846 /* Default@2x.png */,
+				923AAB941635C3F70008346B /* cam_tab.png */,
+				923AAB951635C3F70008346B /* cam_tab@2x.png */,
+				923AAB961635C3F70008346B /* cool_down.png */,
+				923AAB971635C3F70008346B /* cool_up.png */,
+				923AAB981635C3F70008346B /* heat_down.png */,
+				923AAB991635C3F70008346B /* heat_up.png */,
+				923AAB9A1635C3F70008346B /* Icon.png */,
+				923AAB9B1635C3F70008346B /* Icon@2x.png */,
+				923AAB9C1635C3F70008346B /* light_off.png */,
+				923AAB9D1635C3F70008346B /* light_on.png */,
+				923AAB9E1635C3F70008346B /* light_tab.png */,
+				923AABA11635C3F70008346B /* temp_tab.png */,
+			);
+			name = images;
+			path = LightControl/images;
+			sourceTree = "<group>";
+		};
+		92A2254C15ED0815000ED465 = {
+			isa = PBXGroup;
+			children = (
+				92A2256115ED0815000ED465 /* LightControl */,
+				923AAB931635C3F70008346B /* images */,
+				92A2256215ED0815000ED465 /* Supporting Files */,
+				92A2255A15ED0815000ED465 /* Frameworks */,
+				92A2255815ED0815000ED465 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		92A2255815ED0815000ED465 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				92A2255715ED0815000ED465 /* LightControl.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		92A2255A15ED0815000ED465 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				92A2255B15ED0815000ED465 /* UIKit.framework */,
+				92A2255D15ED0815000ED465 /* Foundation.framework */,
+				92A2255F15ED0815000ED465 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		92A2256115ED0815000ED465 /* LightControl */ = {
+			isa = PBXGroup;
+			children = (
+				923AAB901635C3C50008346B /* LightDatabase.h */,
+				923AAB911635C3C50008346B /* LightDatabase.m */,
+				92A225AE15ED3879000ED465 /* Light.h */,
+				92A225AF15ED3879000ED465 /* Light.m */,
+				92A2256A15ED0815000ED465 /* LightControlAppDelegate.h */,
+				92A2256B15ED0815000ED465 /* LightControlAppDelegate.m */,
+				92A225B015ED3BD7000ED465 /* LightTableViewCell.h */,
+				92A225B115ED3BD7000ED465 /* LightTableViewCell.m */,
+				92A225AC15ED0BEE000ED465 /* LightTableViewCell_iPhone.xib */,
+				92A2258C15ED0842000ED465 /* LightTableViewController.h */,
+				92A2258D15ED0842000ED465 /* LightTableViewController.m */,
+				92A2258E15ED0842000ED465 /* LightTableViewController.xib */,
+				92A225AA15ED08EE000ED465 /* LightRequest.h */,
+				92A225AB15ED08EE000ED465 /* LightRequest.m */,
+				92A7ECA7164826CB00D61846 /* LightServer.h */,
+				923AABB01635C8AE0008346B /* Thermostat.h */,
+				923AABB11635C8AF0008346B /* Thermostat.m */,
+				923AABB81635CF830008346B /* ThermostatTableViewController.h */,
+				923AABB91635CF830008346B /* ThermostatTableViewController.m */,
+				923AABBA1635CF830008346B /* ThermostatTableViewController.xib */,
+				923AABBD1635CFB20008346B /* ThermostatTableViewCell.h */,
+				923AABBE1635CFB20008346B /* ThermostatTableViewCell.m */,
+				923AABC01635CFE60008346B /* ThermostatTableViewCell_iPhone.xib */,
+			);
+			path = LightControl;
+			sourceTree = "<group>";
+		};
+		92A2256215ED0815000ED465 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				92A2256315ED0815000ED465 /* LightControl-Info.plist */,
+				92A2256415ED0815000ED465 /* InfoPlist.strings */,
+				92A2256715ED0815000ED465 /* main.m */,
+				92A2256915ED0815000ED465 /* LightControl-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			path = LightControl;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		92A2255615ED0815000ED465 /* LightControl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92A2258915ED0815000ED465 /* Build configuration list for PBXNativeTarget "LightControl" */;
+			buildPhases = (
+				92A2255315ED0815000ED465 /* Sources */,
+				92A2255415ED0815000ED465 /* Frameworks */,
+				92A2255515ED0815000ED465 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LightControl;
+			productName = LightControl;
+			productReference = 92A2255715ED0815000ED465 /* LightControl.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		92A2254E15ED0815000ED465 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 92A2255115ED0815000ED465 /* Build configuration list for PBXProject "LightControl" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 92A2254C15ED0815000ED465;
+			productRefGroup = 92A2255815ED0815000ED465 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				92A2255615ED0815000ED465 /* LightControl */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		92A2255515ED0815000ED465 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92A2256615ED0815000ED465 /* InfoPlist.strings in Resources */,
+				92A2259015ED0842000ED465 /* LightTableViewController.xib in Resources */,
+				92A225AD15ED0BEE000ED465 /* LightTableViewCell_iPhone.xib in Resources */,
+				923AABA21635C3F70008346B /* cam_tab.png in Resources */,
+				923AABA31635C3F70008346B /* cam_tab@2x.png in Resources */,
+				923AABA41635C3F70008346B /* cool_down.png in Resources */,
+				923AABA51635C3F70008346B /* cool_up.png in Resources */,
+				923AABA61635C3F70008346B /* heat_down.png in Resources */,
+				923AABA71635C3F70008346B /* heat_up.png in Resources */,
+				923AABA81635C3F70008346B /* Icon.png in Resources */,
+				923AABA91635C3F70008346B /* Icon@2x.png in Resources */,
+				923AABAA1635C3F70008346B /* light_off.png in Resources */,
+				923AABAB1635C3F70008346B /* light_on.png in Resources */,
+				923AABAC1635C3F70008346B /* light_tab.png in Resources */,
+				923AABAF1635C3F70008346B /* temp_tab.png in Resources */,
+				923AABBC1635CF830008346B /* ThermostatTableViewController.xib in Resources */,
+				923AABC11635CFE60008346B /* ThermostatTableViewCell_iPhone.xib in Resources */,
+				92A7ECB11648327200D61846 /* Default-568h@2x.png in Resources */,
+				92A7ECB21648327200D61846 /* Default.png in Resources */,
+				92A7ECB31648327200D61846 /* Default@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		92A2255315ED0815000ED465 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92A2256815ED0815000ED465 /* main.m in Sources */,
+				92A2256C15ED0815000ED465 /* LightControlAppDelegate.m in Sources */,
+				92A2258F15ED0842000ED465 /* LightTableViewController.m in Sources */,
+				92A225B215ED3BD8000ED465 /* LightTableViewCell.m in Sources */,
+				92A225B615ED6769000ED465 /* Light.m in Sources */,
+				92A225B715ED6775000ED465 /* LightRequest.m in Sources */,
+				923AAB921635C3D80008346B /* LightDatabase.m in Sources */,
+				923AABB21635C8AF0008346B /* Thermostat.m in Sources */,
+				923AABBB1635CF830008346B /* ThermostatTableViewController.m in Sources */,
+				923AABBF1635CFB20008346B /* ThermostatTableViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		92A2256415ED0815000ED465 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				92A2256515ED0815000ED465 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		92A2258715ED0815000ED465 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		92A2258815ED0815000ED465 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		92A2258A15ED0815000ED465 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LightControl/LightControl-Prefix.pch";
+				INFOPLIST_FILE = "LightControl/LightControl-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		92A2258B15ED0815000ED465 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LightControl/LightControl-Prefix.pch";
+				INFOPLIST_FILE = "LightControl/LightControl-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		92A2255115ED0815000ED465 /* Build configuration list for PBXProject "LightControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92A2258715ED0815000ED465 /* Debug */,
+				92A2258815ED0815000ED465 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92A2258915ED0815000ED465 /* Build configuration list for PBXNativeTarget "LightControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92A2258A15ED0815000ED465 /* Debug */,
+				92A2258B15ED0815000ED465 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 92A2254E15ED0815000ED465 /* Project object */;
+}
