@@ -52,7 +52,6 @@
     
     if (self != nil)
     {
-        responseData = [[NSMutableData alloc] initWithCapacity:2048];
         completion = onCompletion;
         failure = onFailure;
         
@@ -68,7 +67,17 @@
                                                       cachePolicy:NSURLRequestReloadIgnoringLocalCacheData 
                                                   timeoutInterval:60.0];
         NSLog(@"Sending request: %@", [[request URL] absoluteString]);
-        [NSURLConnection connectionWithRequest:request delegate:self];
+
+        NSURLConnection *theConnection=[[NSURLConnection alloc] initWithRequest:request delegate:self];
+        if (theConnection)
+        {
+            responseData = [[NSMutableData alloc] initWithCapacity:2048];
+        }
+        else
+        {
+            NSLog(@"Oops?!?");
+        }
+        
     }
     return self;
 }
@@ -104,6 +113,7 @@
 - (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response
 {
     NSLog(@"connection didReceiveResponse");
+    [responseData setLength:0];
 }
 
 

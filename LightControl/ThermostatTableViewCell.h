@@ -8,14 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
-@class Thermostat;
+#import "Thermostat.h"
 
-@interface ThermostatTableViewCell : UITableViewCell
+@class ThermostatTableViewController;
+
+@interface ThermostatTableViewCell : UITableViewCell <ThermostatDelegate>
 {
     BOOL loading;
 }
 
 @property (nonatomic, assign) Thermostat* thermostat;
+@property (nonatomic, assign) ThermostatTableViewController* controller;
 @property (nonatomic, assign) IBOutlet UILabel* ambient;
 @property (nonatomic, assign) IBOutlet UILabel* coolSetpoint;
 @property (nonatomic, assign) IBOutlet UILabel* heatSetpoint;

@@ -8,14 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
-@class Light;
+#import "Light.h"
 
-@interface LightTableViewCell : UITableViewCell
+@class LightTableViewController;
+
+@interface LightTableViewCell : UITableViewCell <LightDelegate>
 {
     BOOL loading;
 }
 
 @property (nonatomic, assign) Light* light;
+@property (nonatomic, assign) LightTableViewController* controller;
 @property (nonatomic, assign) IBOutlet UILabel* lightLabel;
 @property (nonatomic, assign) IBOutlet UISwitch* lightSwitch;
 @property (nonatomic, assign) IBOutlet UISlider* lightSlider; 

@@ -30,6 +30,7 @@
         self.title = @"Thermostats";
         self.tabBarItem.image = [UIImage imageNamed:@"temp_tab.png"];
         
+        loadedOnce = NO;
         refresher = [[UIRefreshControl alloc] init];
         [refresher addTarget:self action:@selector(refresh) forControlEvents:UIControlEventValueChanged];
         self.refreshControl = refresher;
@@ -39,9 +40,13 @@
 
 // ----------------------------------------------------------------------------
 // ----------------------------------------------------------------------------
-- (void)viewDidLoad
+- (void)viewDidAppear:(BOOL) animated
 {
-    [LIGHT_DATABASE reloadThermostats];
+    if (!loadedOnce)
+    {
+        loadedOnce = YES;
+        [LIGHT_DATABASE reloadThermostats];
+    }
 }
 
 // ----------------------------------------------------------------------------
@@ -109,6 +114,7 @@
     Thermostat* thermostat = [LIGHT_DATABASE thermostatAtIndex:indexPath.section];
     [cell setValuesFromThermostat:thermostat];
     thermostat.delegate = self;
+    cell.controller = self;
     
     return (UITableViewCell*)cell;
 }
@@ -117,15 +123,15 @@
 
 // ----------------------------------------------------------------------------
 // ----------------------------------------------------------------------------
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    Thermostat* thermostat = [LIGHT_DATABASE thermostatAtIndex:indexPath.section];
-    if (![thermostat loading])
-    {
-        thermostat.delegate = self;
-        [thermostat reload];
-    }
-}
+//- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    Thermostat* thermostat = [LIGHT_DATABASE thermostatAtIndex:indexPath.section];
+//    if (![thermostat loading])
+//    {
+//        thermostat.delegate = self;
+//        [thermostat reload];
+//    }
+//}
 
 #pragma mark - Thermostat delegate
 

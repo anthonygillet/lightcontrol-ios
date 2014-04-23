@@ -7,11 +7,11 @@
 //
 
 #import "ThermostatTableViewCell.h"
-#import "Thermostat.h"
+#import "ThermostatTableViewController.h"
 
 @implementation ThermostatTableViewCell
 
-@synthesize thermostat, ambient, coolSetpoint, heatSetpoint, coolSetpointUpButton, coolSetpointDownButton,
+@synthesize thermostat, controller, ambient, coolSetpoint, heatSetpoint, coolSetpointUpButton, coolSetpointDownButton,
             heatSetpointUpButton, heatSetpointDownButton, modeSelector, thermostatActivityIndicator;
 
 // ----------------------------------------------------------------------------
@@ -55,6 +55,10 @@
     
     [modeSelector addTarget:self action:@selector(modeAction:) forControlEvents:UIControlEventValueChanged];
 
+    ambient.userInteractionEnabled = YES;
+    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(reloadThermostat)];
+    [ambient addGestureRecognizer:tapGesture];
+    
     [self updateDisplay];
 }
 
@@ -156,6 +160,31 @@
         [ambient setHidden:NO];
         [modeSelector setEnabled:YES];
     }
+}
+
+// ----------------------------------------------------------------------------
+// ----------------------------------------------------------------------------
+- (void) reloadThermostat
+{
+    if (![thermostat loading])
+    {
+        thermostat.delegate = self;
+        [thermostat reload];
+    }
+}
+
+// ----------------------------------------------------------------------------
+// ----------------------------------------------------------------------------
+- (void) startedLoadingDevice:(NSString *)deviceId
+{
+    [controller.tableView reloadData];
+}
+
+// ----------------------------------------------------------------------------
+// ----------------------------------------------------------------------------
+- (void) finishedLoadingDevice:(NSString *)deviceId
+{
+    [controller.tableView reloadData];
 }
 
 @end

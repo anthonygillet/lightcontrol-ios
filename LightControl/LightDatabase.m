@@ -20,23 +20,47 @@
     self = [super init];
     if (self != nil)
     {
-        NSMutableArray* firstLights = 
+        NSMutableArray* firstLights =
         [[NSMutableArray alloc] initWithObjects:
-         [[Light alloc] initWithDeviceName:@"Media Room Front" deviceId:@"131B62"],
-         [[Light alloc] initWithDeviceName:@"Media Room Back" deviceId:@"133B4D"], nil];
-        NSMutableDictionary* firstSection = 
-        [[NSMutableDictionary alloc] initWithObjectsAndKeys:firstLights, @"lights", @"Basement", @"title", nil];
-
-        NSMutableArray* secondLights = 
-        [[NSMutableArray alloc] initWithObjects:
-         [[Light alloc] initWithDeviceName:@"Breakfast Area" deviceId:@"1391E9"],
          [[Light alloc] initWithDeviceName:@"Recessed Lights" deviceId:@"12BD52"],
          [[Light alloc] initWithDeviceName:@"Pendant Lights" deviceId:@"1339A2"],
          [[Light alloc] initWithDeviceName:@"Kitchen Sink" deviceId:@"14AC5E"], nil];
-        NSMutableDictionary* secondSection = 
-        [[NSMutableDictionary alloc] initWithObjectsAndKeys:secondLights, @"lights", @"Kitchen", @"title", nil];
+        NSMutableDictionary* firstSection =
+        [[NSMutableDictionary alloc] initWithObjectsAndKeys:firstLights, @"lights", @"Kitchen", @"title", nil];
+        
+        NSMutableArray* secondLights =
+        [[NSMutableArray alloc] initWithObjects:
+         [[Light alloc] initWithDeviceName:@"Breakfast Area" deviceId:@"139083"],
+         [[Light alloc] initWithDeviceName:@"Living Room" deviceId:@"1D94A7"],
+         [[Light alloc] initWithDeviceName:@"Dining Room" deviceId:@"138F4B"],
+         [[Light alloc] initWithDeviceName:@"Foyer" deviceId:@"1D9029"], nil];
+        NSMutableDictionary* secondSection =
+        [[NSMutableDictionary alloc] initWithObjectsAndKeys:secondLights, @"lights", @"First Floor", @"title", nil];
 
-        lightSections = [[NSMutableArray alloc] initWithObjects:firstSection, secondSection, nil];
+        NSMutableArray* thirdLights =
+        [[NSMutableArray alloc] initWithObjects:
+         [[Light alloc] initWithDeviceName:@"Media Room Front" deviceId:@"131B62"],
+         [[Light alloc] initWithDeviceName:@"Media Room Back" deviceId:@"133B4D"], nil];
+        NSMutableDictionary* thirdSection =
+        [[NSMutableDictionary alloc] initWithObjectsAndKeys:thirdLights, @"lights", @"Basement", @"title", nil];
+
+        NSMutableArray* fourthLights =
+        [[NSMutableArray alloc] initWithObjects:
+         [[Light alloc] initWithDeviceName:@"Lamp Post" deviceId:@"1CC260"],
+         [[Light alloc] initWithDeviceName:@"Front Door" deviceId:@"1D8D6A"],
+         [[Light alloc] initWithDeviceName:@"Deck" deviceId:@"14C39E"],
+         [[Light alloc] initWithDeviceName:@"Back Yard" deviceId:@"14C389"],nil];
+        NSMutableDictionary* fourthSection =
+        [[NSMutableDictionary alloc] initWithObjectsAndKeys:fourthLights, @"lights", @"Outside", @"title", nil];
+
+        NSMutableArray* fifthLights =
+        [[NSMutableArray alloc] initWithObjects:
+         [[Light alloc] initWithDeviceName:@"Bedroom Light" deviceId:@"1D947D"],
+         [[Light alloc] initWithDeviceName:@"Bedroom Fan" deviceId:@"1D8EED"], nil];
+        NSMutableDictionary* fifthSection =
+        [[NSMutableDictionary alloc] initWithObjectsAndKeys:fifthLights, @"lights", @"Upstairs", @"title", nil];
+
+        lightSections = [[NSMutableArray alloc] initWithObjects:firstSection, secondSection, thirdSection, fourthSection, fifthSection, nil];
         
         thermostats =
         [[NSMutableArray alloc] initWithObjects:

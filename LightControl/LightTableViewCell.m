@@ -7,12 +7,11 @@
 //
 
 #import "LightTableViewCell.h"
-
-#import "Light.h"
+#import "LightTableViewController.h"
 
 @implementation LightTableViewCell
 
-@synthesize light, lightLabel, lightSlider, lightSwitch, lightActivityIndicator, lightImage;
+@synthesize light, controller, lightLabel, lightSlider, lightSwitch, lightActivityIndicator, lightImage;
 
 // ----------------------------------------------------------------------------
 // ----------------------------------------------------------------------------
@@ -46,6 +45,11 @@
     
     [lightSwitch addTarget:theLight action:@selector(switchAction:) forControlEvents:UIControlEventValueChanged];
     [lightSlider addTarget:theLight action:@selector(sliderAction:) forControlEvents:UIControlEventValueChanged];
+    
+    lightLabel.userInteractionEnabled = YES;
+    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(reloadLight)];
+    [lightLabel addGestureRecognizer:tapGesture];
+
     [self updateDisplay];
 }
 
@@ -69,6 +73,31 @@
         [lightImage setHidden:NO];
         [lightImage setImage:[UIImage imageNamed:(lightSwitch.on ? @"light_on.png" : @"light_off.png")]];
     }
+}
+
+// ----------------------------------------------------------------------------
+// ----------------------------------------------------------------------------
+- (void) reloadLight
+{
+    if (![light loading])
+    {
+        light.delegate = self;
+        [light reload];
+    }
+}
+
+// ----------------------------------------------------------------------------
+// ----------------------------------------------------------------------------
+- (void) startedLoadingDevice:(NSString *)deviceId
+{
+    [controller.tableView reloadData];
+}
+
+// ----------------------------------------------------------------------------
+// ----------------------------------------------------------------------------
+- (void) finishedLoadingDevice:(NSString *)deviceId
+{
+    [controller.tableView reloadData];
 }
 
 @end

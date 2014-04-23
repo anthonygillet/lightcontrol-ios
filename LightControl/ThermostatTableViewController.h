@@ -17,6 +17,7 @@
 {
     ThermostatTableViewCell *thermostatCell;
     UIRefreshControl* refresher;
+    BOOL loadedOnce;
 }
 
 @property (nonatomic, retain) IBOutlet UITableViewCell *thermostatCell;

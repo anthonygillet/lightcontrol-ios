@@ -105,6 +105,8 @@
     [cell setValuesFromLight:light];
     light.delegate = self;
     
+    cell.controller = self;
+    
     return (UITableViewCell*)cell;
 }
 
@@ -174,15 +176,15 @@
 
 // ----------------------------------------------------------------------------
 // ----------------------------------------------------------------------------
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    Light* light = [LIGHT_DATABASE lightForIndexPath:indexPath];
-    if (![light loading])
-    {
-        light.delegate = self;
-        [light reload];
-    }
-}
+//- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    Light* light = [LIGHT_DATABASE lightForIndexPath:indexPath];
+//    if (![light loading])
+//    {
+//        light.delegate = self;
+//        [light reload];
+//    }
+//}
 
 #pragma mark - Light delegate
 
