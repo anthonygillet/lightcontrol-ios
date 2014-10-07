@@ -25,6 +25,7 @@
 		923AABBC1635CF830008346B /* ThermostatTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 923AABBA1635CF830008346B /* ThermostatTableViewController.xib */; };
 		923AABBF1635CFB20008346B /* ThermostatTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 923AABBE1635CFB20008346B /* ThermostatTableViewCell.m */; };
 		923AABC11635CFE60008346B /* ThermostatTableViewCell_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 923AABC01635CFE60008346B /* ThermostatTableViewCell_iPhone.xib */; };
+		9272832119CCC77000E5E0C3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9272832019CCC77000E5E0C3 /* Images.xcassets */; };
 		92A2255C15ED0815000ED465 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92A2255B15ED0815000ED465 /* UIKit.framework */; };
 		92A2255E15ED0815000ED465 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92A2255D15ED0815000ED465 /* Foundation.framework */; };
 		92A2256015ED0815000ED465 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92A2255F15ED0815000ED465 /* CoreGraphics.framework */; };
@@ -65,6 +66,7 @@
 		923AABBD1635CFB20008346B /* ThermostatTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThermostatTableViewCell.h; sourceTree = "<group>"; };
 		923AABBE1635CFB20008346B /* ThermostatTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThermostatTableViewCell.m; sourceTree = "<group>"; };
 		923AABC01635CFE60008346B /* ThermostatTableViewCell_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThermostatTableViewCell_iPhone.xib; sourceTree = "<group>"; };
+		9272832019CCC77000E5E0C3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		92A2255715ED0815000ED465 /* LightControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LightControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92A2255B15ED0815000ED465 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		92A2255D15ED0815000ED465 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -131,6 +133,7 @@
 		92A2254C15ED0815000ED465 = {
 			isa = PBXGroup;
 			children = (
+				9272832019CCC77000E5E0C3 /* Images.xcassets */,
 				92A2256115ED0815000ED465 /* LightControl */,
 				923AAB931635C3F70008346B /* images */,
 				92A2256215ED0815000ED465 /* Supporting Files */,
@@ -258,6 +261,7 @@
 				923AABA51635C3F70008346B /* cool_up.png in Resources */,
 				923AABA61635C3F70008346B /* heat_down.png in Resources */,
 				923AABA71635C3F70008346B /* heat_up.png in Resources */,
+				9272832119CCC77000E5E0C3 /* Images.xcassets in Resources */,
 				923AABA81635C3F70008346B /* Icon.png in Resources */,
 				923AABA91635C3F70008346B /* Icon@2x.png in Resources */,
 				923AABAA1635C3F70008346B /* light_off.png in Resources */,
@@ -365,10 +369,17 @@
 		92A2258A15ED0815000ED465 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Nuance Communications (Y5QJ442VCG)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Nuance Communications (Y5QJ442VCG)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LightControl/LightControl-Prefix.pch";
 				INFOPLIST_FILE = "LightControl/LightControl-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "59378812-267e-42f8-91fc-d7c45a8f5b3b";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "59378812-267e-42f8-91fc-d7c45a8f5b3b";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -376,12 +387,17 @@
 		92A2258B15ED0815000ED465 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Nuance Communications (Y5QJ442VCG)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Nuance Communications (Y5QJ442VCG)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LightControl/LightControl-Prefix.pch";
 				INFOPLIST_FILE = "LightControl/LightControl-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				PROVISIONING_PROFILE = "59378812-267e-42f8-91fc-d7c45a8f5b3b";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "59378812-267e-42f8-91fc-d7c45a8f5b3b";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
